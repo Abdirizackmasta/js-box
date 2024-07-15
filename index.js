@@ -141,8 +141,67 @@ string.charAt(index);
 let testString2 = "30 Days Of JavaScript";
 console.log(testString2.charAt(0)); // 3
 
-let lastIndex = string.length - 1;
-console.log(string.charAt(lastIndex)); // t
+//  11 .indexOf(): Takes a substring and if the substring exists in a string it returns the first position of the substring if does not exist it returns -1
+string.indexOf(substring);
+let theString = "30 Days Of JavaScript";
+
+console.log(theString.indexOf("D")); // 3
+console.log(theString.indexOf("Days")); // 3
+console.log(theString.indexOf("days")); // -1
+console.log(theString.indexOf("a")); // 4
+console.log(theString.indexOf("JavaScript")); // 11
+console.log(theString.indexOf("Script")); //15
+console.log(theString.indexOf("script")); // -1
+
+let lastIndex = theString.length - 1;
+console.log(theString.charAt(lastIndex)); // t
+
+// 12. lastIndexOf(): Takes a substring and if the substring exists in a string it returns the last position of the substring if it does not exist it returns -1
+//syntax
+string.lastIndexOf(substring);
+let lastIndexString =
+  "I love JavaScript. If you do not love JavaScript what else can you love.";
+
+console.log(lastIndexString.lastIndexOf("love")); // 67
+console.log(lastIndexString.lastIndexOf("you")); // 63
+console.log(lastIndexString.lastIndexOf("JavaScript")); // 38
+
+// 13 .concat(): it takes many substrings and joins them.
+string.concat(substring, substring, substring);
+let concatString = "30";
+console.log(concatString.concat("Days", "Of", "JavaScript")); // 30DaysOfJavaScript
+
+let concatCountry = "Fin";
+console.log(concatCountry.concat("land")); // Finland
+
+// 14. startsWith: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+//syntax
+string.startsWith(substring);
+let startsWithString = "Love is the best to in this world";
+
+console.log(startsWithString.startsWith("Love")); // true
+console.log(startsWithString.startsWith("love")); // false
+console.log(startsWithString.startsWith("world")); // false
+
+let startswithCountry = "Finland";
+
+console.log(startswithCountry.startsWith("Fin")); // true
+console.log(startswithCountry.startsWith("fin")); // false
+console.log(startswithCountry.startsWith("land")); //  false
+
+// 15. endsWith: it takes a substring as an argument and it checks if the string ends with that specified substring. It returns a boolean(true or false).
+string.endsWith(substring);
+let endsWithString = "Love is the most powerful feeling in the world";
+
+console.log(endsWithString.endsWith("world")); // true
+console.log(endsWithString.endsWith("love")); // false
+console.log(endsWithString.endsWith("in the world")); // true
+
+let endsWithCountry = "Finland";
+console.log(endsWithCountry.endsWith("land")); // true
+console.log(endsWithCountry.endsWith("fin")); // false
+console.log(endsWithCountry.endsWith("Fin")); //  false
+
 // NUMBERS
 const PI = Math.PI;
 
