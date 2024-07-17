@@ -202,6 +202,11 @@ console.log(endsWithCountry.endsWith("land")); // true
 console.log(endsWithCountry.endsWith("fin")); // false
 console.log(endsWithCountry.endsWith("Fin")); //  false
 
+//16. repeat(): it takes a number as argument and it returns the repeated version of the string.
+string.repeat(n);
+let repeatString = "love";
+console.log(repeatString.repeat(10)); // lovelovelovelovelovelovelovelovelovelove
+
 // NUMBERS
 const PI = Math.PI;
 
